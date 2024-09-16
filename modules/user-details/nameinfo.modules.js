@@ -14,11 +14,23 @@ const userInfoSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    fatherName: {
+      type: String,
+      required: true,
+    },
+    motherName: {
+      type: String,
+      required: true,
+    },
     DOB: {
       type: String,
       required: true,
     },
-    phoneNumber: {
+    phoneNumber1: {
+      type: Number,
+      required: true,
+    },
+    phoneNumber2: {
       type: Number,
       required: true,
     },
@@ -27,7 +39,19 @@ const userInfoSchema = new mongoose.Schema(
       required: true,
       lowecase: true,
     },
-    address: {
+    address1: {
+      type: String,
+      required: true,
+    },
+    address2: {
+      type: String,
+      required: true,
+    },
+    salaryMonth: {
+      type: String,
+      required: true,
+    },
+    salaryYearly: {
       type: String,
       required: true,
     },
